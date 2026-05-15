@@ -1,0 +1,48 @@
+---
+description: Pitlane step-by-step workflow, task discipline, and design presentation summaries
+alwaysApply: true
+---
+
+# Pitlane — Agent Workflow
+
+## Source of truth
+
+- Read and follow `PITLANE_TASKS.md` for scope, task order, and acceptance criteria.
+- When the user says **continue**, complete **only the next unfinished task** — do not skip ahead or batch multiple tasks unless explicitly asked.
+
+## Execution discipline
+
+- Work **step by step**; never redesign or refactor the whole project in one pass.
+- Touch **only files required** for the current task.
+- **Preserve working code** — do not rewrite files that already work unless the task requires it.
+- Prefer **small, focused diffs** over broad cleanups, drive-by refactors, or unrelated edits.
+- **Minimal token usage**: read only what you need; avoid re-explaining unchanged code; do not dump large file contents in replies.
+
+## Design identity (Pitlane)
+
+Premium **Formula 1 2026 companion** — cinematic motorsport aesthetics, not a Formula1.com clone.
+
+- Premium dark atmosphere (charcoal/black, white type, red racing accents)
+- Glassmorphism and layered depth where appropriate
+- Motorsport-inspired dashboard UI (tables + cards, official results feel)
+- Responsive layout, race data visualization, SaaS-quality polish
+- GSAP-ready interactions (`@gsap/react`, `useGSAP`, ScrollTrigger) — restrained and performant
+
+## After each major task — required summary
+
+End implementation replies with a **portfolio-ready product design presentation** (not code-only). Use these sections:
+
+### Design Highlights
+### Design Rationale
+### UI Improvements
+### Animation Direction
+### Technical Decisions
+
+Tone: professional, polished, senior UI/UX + frontend engineer. Describe outcomes and intent; keep prose tight.
+
+## When unclear
+
+- If the next task is ambiguous, infer from `PITLANE_TASKS.md` task order and completed work — do not invent new scope.
+
+- Do not expand scope beyond the current task. If something is necessary to complete the task, make the smallest required change.
+- Before editing, briefly state which task from PITLANE_TASKS.md you are working on.
